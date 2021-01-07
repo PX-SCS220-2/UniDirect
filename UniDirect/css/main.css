@@ -1,0 +1,373 @@
+		
+		
+		*{
+			scroll-behavior: smooth;
+			box-sizing: border-box;
+		}
+		body{overflow-x: hidden;}
+		.navbar{
+			display: block;
+			z-index: 25;
+			width: 100%;
+			padding-left: 80px;
+			position: fixed;
+			background-color: transparent;
+			box-shadow:0 2px 5px 0 rgba(0, 0, 0, .2), 0 2px 10px 0 rgba(0, 0, 0, .1);
+		}
+
+		.navbar-brand b{
+			color: gold;
+		}
+		.navbar-collapse{
+			width: 80%;
+			float: left;
+			padding-top: 20px;
+		}
+		.navbar-brand{
+			width: 15%;
+			float: left;
+		}
+	
+		.navbar-brand:hover{
+			color: white;
+		}
+		.nav-box{
+			border:solid 1px white;
+			
+		}
+		.navbar-toggler{
+			float: right;
+			color: white;
+			font-size: 35px;
+			padding-top: 10px;
+		}
+		.nav-link,.navbar-brand{
+			color: white;
+			font-weight: bolder;
+			line-height: 18px;
+		}
+		.nav-link:hover{
+			color: #ddd;
+		}
+		.login-nav{
+			position: absolute;
+    		right: 20px;
+		}
+		.banner-top{
+			width: 100%;
+			min-height: 480px;
+			height: auto;
+			background-image: url(../img/bg.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			text-align: center;
+			color: white;
+			padding:100px 100px 10px 100px;
+			background-color: rgba(50,50,90,0.22);
+		}
+		.title{
+		font-size: 35px;
+		}
+		.sub-title{
+			font-weight: lighter;
+		}
+		.input-form{
+			margin-top: 30px;
+			width: 60%;
+			margin-left: 20%;
+		}
+		.nav-item-search .nav-link{
+			background-color: rgba(50,50,50,0.4);
+			height: 35px; 
+		}
+		.nav-item-search .active,.search-btn{
+			background-color: #f7a633; 
+			color: white;
+
+		}
+		.search-btn{
+			width: 100%;
+            border-radius:0px;
+		}
+		.search-input{
+			border-radius: 0px;
+			width: 90%;
+			border-color: transparent;
+		}
+		.adverticement{
+			height: 10px;
+			padding: 10px;
+		}
+		.divider{
+			height: 40px;
+			padding: 30px;
+		}
+		.quote{
+			background-image: url(../img/bg-2.jpg);
+			background-repeat: repeat;
+			background-size: auto;
+			color: white;
+			text-align: center;
+			font-size: 20px;
+			padding-left: 60px;
+			padding-right: 60px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+
+		}
+		.course-slider{
+			padding: 50px;
+		}
+
+
+		
+		.form-top-labels{
+			z-index: 10;
+			position: absolute;top: -10px;
+			cursor: pointer;
+			border-radius: 0px;
+			color: #666;
+			font-size: 13px;
+			font-weight: bold;
+		}
+
+		.form-top-labels-1{
+			top: 3%;
+			width: 5%;
+			left: 1%;
+		}
+
+		.form-top-labels-2{
+			top: 3%;
+
+			left:33%;
+		}
+
+		.form-top-labels-3{
+			top: 3%;
+
+			left:64%;
+		}
+		
+		.couse-inputs{
+			width: 100%;
+			padding: 5px;
+			text-align: center;
+			padding-top: 16px;
+
+		}
+		
+		.input-group{
+
+			border:solid 2px #f7a633;
+		}
+		#search{
+			border-left:solid 3px #f7a633;
+			border-radius: 0px !important;
+			background-color: #0071c2;
+
+		}
+
+		.slider-div,.slider-div-2{
+			margin-top: 25px;
+		}
+		#container {
+		  position:relative;
+		  top:0;
+		  height:250px;
+		  overflow-y: hidden;
+
+		}
+		#slider {
+		width: 100%;
+		 float: left;
+		  position:absolute;
+		  overflow-y: hidden;
+
+		}
+		#slider div {
+		  float:left;
+		  height: 250px;
+		  width: 255px;
+		  padding: 20px;
+		  border-radius: 10px;
+
+		}
+		#slider div section{
+			height: 100%;
+			border-radius: 10px;
+			padding: 35px;
+			text-align:  center;
+			background-size: cover;
+			color: white;
+		}
+		
+		#slider div section a{
+			color: white;
+			text-decoration: none;
+		}
+
+		.arrows-slider{
+			position: absolute;
+			z-index: auto;
+			cursor: pointer;
+			top: 100px;
+			color: #eee;
+			text-shadow: 7px 5px 2px rgba(160,160,160,0.8);
+			font-size: 35px;
+			height: 40px;
+			width: 40px;
+			border-radius: 50px;
+			background-color: #555;
+			padding: 2px;
+			opacity: 0.5;
+		}
+		#next{
+			right: 0px;
+			margin-right: 0px;
+		}
+		#prev{
+			z-index: 20;
+			left: 0px;
+			margin-left: -5px;
+			
+		}
+		#container::-webkit-scrollbar{
+			display: none;
+		}
+		/*-------------------------Items 3 sector-----------------------*/
+			.slider-div-2{
+			min-height: 350px;
+		}
+		.slideshow-container {
+		  max-width: 100%;
+		  height: 350px;
+		  position: relative;
+		  margin: 0px;
+		  margin-bottom: 20px;
+
+		}
+		.mySlides {
+			display: inline-block;
+			width: 33%;
+			padding: 10px;
+			float: left;
+		}
+		.mySlides img {vertical-align: middle;width: 100%;height: auto;}
+
+
+		.dot {
+		  cursor: pointer;
+		  height: 25px;
+		  width: 25px;
+		  margin: 0 6px;
+		  background-color: #336;
+		  border-radius: 50%;
+		  display: inline-block;
+		}
+		.dot-container{
+			text-align:center;
+			display: none;
+		}
+		.slider-caption{
+			color: #335;
+			margin-top: 20px;
+		}
+		.active-dot, .dot:hover {
+		  background-color: #558;
+		}
+
+		/* Fading animation */
+		.fader {
+		  -webkit-animation-name: fader;
+		  -webkit-animation-duration: 1.5s;
+		  animation-name: fader;
+		  animation-duration: 1.5s;
+		}
+
+
+		@keyframes fader {
+		  from {opacity: 0.4}
+		  to {opacity: 1}
+		}
+
+
+		.footer {
+            position:relative;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(35, 51, 103);
+            height: 50px;
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+        }
+
+		
+/* ---------------------------------Mobile Screen Settings-------------------------------------------------*/
+
+
+@media only screen and (max-width: 768px){
+	*::-webkit-scrollbar{
+			display: none;
+		}
+	.title{
+		font-size: 35px;
+	}
+
+	.banner-top{
+		padding:100px 20px 10px 20px;
+	}
+	.navbar{
+		padding-left: 20px;
+        background-color:#233367;
+	}
+	.nav{
+		width: 100%;
+	}
+	.navbar, .navbar-collapse{
+		background-color: #233368 !important;
+
+	}
+	.nav-item-search{
+		width: 100%;
+	}
+	.input-form{
+		width: 90%;
+		margin-left: 5%;
+	}
+	.search-input{
+		width: 87%;
+		float: left;
+	}
+	.search-btn{
+		float: left;
+		width: 100%;
+        
+	}
+	
+	
+	 #slider {
+	 	position: initial;
+	 }
+	
+	
+	
+	#search{
+		text-align: center;
+		border-style: none;
+		width: 100% !important;
+	}
+	.arrows-slider{
+			display: none;
+	}
+	.mySlides img {
+		width: 100%;height: auto;
+	}
+	.mySlides {display: none;
+		float: none;
+		width: 100% !important; }
+	.dot-container{display: block;}
+	
+
+}

@@ -1,0 +1,52 @@
+body{
+    background: white;
+}
+h2 {
+    text-align: center;
+}
+
+
+#frm{
+    background-color:lightblue;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    color: black;
+
+}
+#frm label{
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+#frm input{
+    color: #fff;
+    background-color: #337ab7;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px 25px;
+    margin-top: 10px;
+}
+
+#btn{
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    border-radius: 10px;
+    padding: 5px 25px;
+
+}
+footer{
+    width: 100%;
+    background-color: white;
+    color: black;
+    bottom: 0px;
+
+
+}
+footer p{
+    text-align: center;
+    padding: 20px;
+}
