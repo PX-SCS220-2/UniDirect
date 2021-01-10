@@ -27,6 +27,11 @@
 
         </form>
     </div>
+
+         <div class="link">
+                     <a href="../User%20login/UserForgetPass.php">Forget password?</a><br>
+             <a href="../User%20login/UserSignUp.php.php">Sign Up</a>
+         </div>
               <footer>
                          <p>Copyright UniDirect 2021</p>
               </footer>
