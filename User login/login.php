@@ -5,10 +5,11 @@
     <Link rel="stylesheet" type="text/css" href="loginStyle.css"
 </head>
 <body>
-    <h2>
-        User login
-    </h2>
+
     <div id="frm">
+        <h1>
+            User login
+        </h1>
         <form action="LoginProcess.php" method="post">
 
         <p>
@@ -30,7 +31,7 @@
 
          <div class="link">
                      <a href="../User%20login/UserForgetPass.php">Forget password?</a><br>
-             <a href="../User%20login/UserSignUp.php.php">Sign Up</a>
+             <a href="../User%20login/UserSignUp.php">No Account? Sign Up</a>
          </div>
               <footer>
                          <p>Copyright UniDirect 2021</p>
