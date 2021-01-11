@@ -11,7 +11,7 @@ body{
     height: 100%;
     width: 100%;
 }
-#frm{
+#signUp{
     background-color: rgba(200,200,230,0.1);
     padding: 20px;
     max-width: 400px;
@@ -20,22 +20,10 @@ body{
     margin: 20px auto 140px;
 }
 
-#frm h1{
+#Sign h1{
     font-size: 36px;
 }
 
-.link{
-    text-align: center;
-    padding-top: 10px;
-
-}
-
-.link a{
-    text-decoration: none;
-    text-align: center;
-    color: white;
-
-}
 
 input[type=text], input[type=password], input[type=email]{
     width: 80%;
@@ -66,11 +54,5 @@ footer p{
     text-align: center;
     padding: 20px;
 }
-
-
-
-
-
-
 
 
