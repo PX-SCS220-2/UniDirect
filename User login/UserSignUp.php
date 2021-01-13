@@ -9,7 +9,7 @@
     <h1>
         Sign Up
     </h1>
-    <form action="UserSignUp.php" method="post">
+    <form action="UserSignUpProcess.php" method="post">
 
         <p>
             <label>Username: </label>
