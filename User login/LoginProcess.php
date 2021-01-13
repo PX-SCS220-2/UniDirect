@@ -11,7 +11,7 @@
     $con = mysqli_connect($server, $user, $pass, $db);
 
     //query the databse for user
-    $result = mysqli_query($con,"select * from users where username = '$username' and password = '$password'")
+    $result = mysqli_query($con,"select * from user where username = '$username' and password = '$password'")
         or die("Failed to query database ".mysqli_error());
     $row = mysqli_fetch_array($result);
     if($row['username'] == $username && $row['password'] == $password){
