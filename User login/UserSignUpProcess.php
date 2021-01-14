@@ -16,6 +16,8 @@ $username = mysqli_real_escape_string($con,$_REQUEST['user']);
 $password = mysqli_real_escape_string($con,$_REQUEST['pass']);
 $email = mysqli_real_escape_string($con,$_REQUEST['email']);
 
+$password = md5($password);
+
 $insert = "INSERT INTO `users` (`id`, `username`, `password`, `email`) VALUES (NULL , '$username', '$password', '$email')";
 
 if(mysqli_query($con, $insert)){
