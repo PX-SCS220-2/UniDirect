@@ -1,3 +1,4 @@
+<?php // php interpret the PHP code ?>
 <!DOCTYPE html>
 <html>
 <head>
