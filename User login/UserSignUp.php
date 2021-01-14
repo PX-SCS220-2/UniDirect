@@ -13,22 +13,22 @@
 
         <p>
             <label>Username: </label>
-            <input type="text" id="user" name="user"  required/>
+            <input type="text" name="user"  required/>
         </p>
 
         <p>
             <label>Email: </label>
-            <input type="email" id="email" name="email"  required/>
+            <input type="email"  name="email"  required/>
         </p>
 
         <p>
             <label>Password: </label>
-            <input type="password" id="pass" name="pass"  required/>
+            <input type="password" name="pass"  required/>
         </p>
 
         <p>
             <label>Confirm Password: </label>
-            <input type="password" id="pass2" name="pass2"  required/>
+            <input type="password"  name="pass2"  required/>
         </p>
 
         <p>
