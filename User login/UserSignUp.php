@@ -28,11 +28,11 @@
 
         <p>
             <label>Confirm Password: </label>
-            <input type="password" id="passwordConf" name="passwordConf"  required/>
+            <input type="password" id="pass2" name="pass2"  required/>
         </p>
 
         <p>
-            <input type="submit" id="btn" value="Sign Up" />
+            <input type="submit" name="register" value="Sign Up" />
         </p>
 
             <p class="text-center">Already a Member? <a href="login.php">Sign In</a> </p>

@@ -1,26 +1,41 @@
 <?php
-    $server = "127.0.0.1";
-    $user = "root";
-    $pass = "";
-    $db = "login";
 
 
-    $con = mysqli_connect($server, $user, $pass, $db);
+$server = "127.0.0.1";
+$user = "root";
+$pass = "";
+$db = "login";
 
-    if ($con->connect_error) {
-        die("Connection failed: " . $con->connect_error);
-    }
+$username = $_POST['user'];
+$email = $_POST['email'];
+$password = $_POST['pass'];
+$password2 = $_POST['pass2'];
 
-    $username = mysqli_real_escape_string($con,$_REQUEST['user']);
-    $password = mysqli_real_escape_string($con,$_REQUEST['pass']);
-    $email = mysqli_real_escape_string($con,$_REQUEST['email']);
 
-    $insert = "INSERT INTO `users` (`id`, `username`, `password`, `email`) VALUES (NULL , '$username', '$password', '$email')";
+ $con = mysqli_connect($server, $user, $pass, $db);
 
-    if(mysqli_query($con, $insert)){
-        echo "You have been successfully Sign In!";
-    }else{
-        echo "Error";
-    }
+if ($con->connect_error) {
+    die("Connection failed: " . $con->connect_error);
+}
 
-    mysqli_close($con);
+$username = mysqli_real_escape_string($con,$_REQUEST['user']);
+$email = mysqli_real_escape_string($con,$_REQUEST['email']);
+$password = mysqli_real_escape_string($con,$_REQUEST['pass']);
+
+
+$insert = "INSERT INTO 'registeruser' ('username', 'email', 'password') VALUES (NULL , '$username', '$email', '$password')";
+
+if(mysqli_query($con, $insert)){
+    echo "You have been successfully Sign In!";
+}else{
+    echo "Error...";
+}
+
+mysqli_close($con);
+
+?>
+
+
+
+
+
