@@ -1,0 +1,22 @@
+body{
+    font-family: 'Helvetica Neue', 'Helvetica' , 'Arial' ,sans-serif;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: white;
+
+}
+
+h3{
+    font-size:36px;
+}
+
+input, select {
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+
