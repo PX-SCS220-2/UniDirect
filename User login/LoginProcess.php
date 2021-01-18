@@ -30,15 +30,14 @@
     <Link rel="stylesheet" type="text/css" href=""
 </head>
 <body>
-
 <div id="frm">
     <h1>
         Student Page
     </h1>
 
-
+        <a href="Logout.php">Logout</a><br>
         <a href="../UniDirect/index.html">Back to Main page</a><br>
-
+        <a href="UserInfo.php">Personal information</a><br>
 </div>
 </body>
 

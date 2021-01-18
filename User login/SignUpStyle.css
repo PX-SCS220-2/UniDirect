@@ -2,9 +2,10 @@ body{
     font-family: 'Helvetica Neue', 'Helvetica' , 'Arial' ,sans-serif;
     margin: 0px;
     background-repeat: no-repeat;
-    background-size: auto;
     background-color: #102E7C;
-
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 .container{
     margin: 0px;

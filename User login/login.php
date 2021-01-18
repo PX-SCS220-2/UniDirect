@@ -5,11 +5,18 @@
     <Link rel="stylesheet" type="text/css" href="loginStyle.css"
 </head>
 <body>
-
+        <img src="img/Logo.png" height="60">
     <div id="frm">
         <h1>
             User login
         </h1>
+
+        <?php
+        if(isset($_SESSION['message'])) {
+            echo "<div id='error-msg'>".$_SESSION['message']."</div>";
+            unset($_SESSION['message']);
+        }
+        ?>
         <form action="LoginProcess.php" method="post">
 
         <p>
@@ -39,7 +46,6 @@
 </body>
 
 </html>
-
 
 
 

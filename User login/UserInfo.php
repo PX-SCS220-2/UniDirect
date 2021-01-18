@@ -6,10 +6,10 @@
 
 </head>
 <body>
-
+<img src="img/Logo.png" height="60">
 <div align="center">
     <h3>
-        User information update
+        User information Update
     </h3>
     <div class="row">
         <div class="col-md-6">
@@ -36,7 +36,7 @@
         </div>
 
         <div class="form-group">
-            <label for="file">Select File</label>
+            <label for="file">Reference Letter</label>
             <input type="file" name="file" >
         </div>
 
@@ -44,10 +44,10 @@
         <input type="submit" name="update" value="Update">
          </div>
 
-    </form>
-</div>
-</div>
-</div>
-</body>
+                  </form>
+              </div>
+            </div>
+        </div>
+    </body>
 
 </html>

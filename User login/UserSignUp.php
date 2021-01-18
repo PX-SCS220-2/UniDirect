@@ -5,6 +5,8 @@
     <Link rel="stylesheet" type="text/css" href="SignUpStyle.css"
 </head>
 <body>
+<img src="img/Logo.png" height="60">
+
 <div id="signUp">
     <h1>
         Sign Up
