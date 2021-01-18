@@ -1,0 +1,8 @@
+
+body{
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 100% 30%;
+    background-image: url(img/bg.jpg);
+    background-attachment: fixed;
+}
