@@ -8,9 +8,9 @@ $db = "login";
 
 $con = mysqli_connect($server, $user, $pass, $db);
 
-if ($con->connect_error) {
-    die("Connection failed: " . $con->connect_error);
-}
+    if ($con->connect_error) {
+        die("Connection failed: " . $con->connect_error);
+    }
 
 $username = mysqli_real_escape_string($con,$_REQUEST['user']);
 $password = mysqli_real_escape_string($con,$_REQUEST['pass']);
