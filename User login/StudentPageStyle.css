@@ -1,0 +1,9 @@
+body{
+    font-family: 'Helvetica Neue', 'Helvetica' , 'Arial' ,sans-serif;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    background-image: url(img/bg.jpg);
+    background-size: 100% 20%;
+    background-attachment: fixed;
+}

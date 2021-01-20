@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Login Page</title>
-    <Link rel="stylesheet" type="text/css" href="loginStyle.css"
+    <Link rel="stylesheet" type="text/css" href="loginStyle.css">
 </head>
 <body>
         <img src="img/Logo.png" height="60">
