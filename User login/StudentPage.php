@@ -6,9 +6,9 @@
     <Link rel="stylesheet" type="text/css" href="StudentPageStyle.css">
 </head>
 <body>
- <img src="img/1001.PNG">
-
-
+           <nav>
+               <a href="login.php"><img src="img/1001.PNG"></a>
+           </nav>
 <h1>This is a Student Page</h1>
 <p>When user log in, they should see this page.</p>
 

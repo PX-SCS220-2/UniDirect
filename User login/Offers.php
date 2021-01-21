@@ -6,7 +6,9 @@
     <title>Offer Page</title>
     <Link rel="stylesheet" type="text/css" href="Offers.css"
 </head>
-<img src="img/1001.png">
+<nav>
+    <a href="login.php"><img src="img/1001.PNG"></a>
+</nav>
 <body>
 
     <h1>

@@ -6,8 +6,9 @@
 
 </head>
 <body>
-<img src="img/Logo.png" height="60">
-<div align="center">
+<nav>
+    <a href="login.php"><img src="img/1001.PNG"></a>
+</nav>
     <h3>
         User information Update
     </h3>
