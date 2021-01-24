@@ -14,7 +14,7 @@ body{
 }
 #signUp{
     background-color: rgba(200,200,230,0.1);
-    padding: 20px;
+    padding: 10px;
     max-width: 400px;
     text-align: center;
     color: white;
@@ -25,7 +25,10 @@ body{
     font-size: 36px;
 }
 
+.input-group{
+    padding: 5px;
 
+}
 input[type=text], input[type=password], input[type=email]{
     width: 80%;
     padding: 10px;
