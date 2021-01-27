@@ -1,9 +1,9 @@
 
 <?php
-$server = "127.0.0.1";
-$user = "root";
+$server = "";
+$user = "";
 $pass = "";
-$db = "login";
+$db = "";
 
 
 $con = mysqli_connect($server, $user, $pass, $db);
@@ -12,13 +12,17 @@ $con = mysqli_connect($server, $user, $pass, $db);
         die("Connection failed: " . $con->connect_error);
     }
 
-$username = mysqli_real_escape_string($con,$_REQUEST['user']);
-$password = mysqli_real_escape_string($con,$_REQUEST['pass']);
+$firstname = mysqli_real_escape_string($con,$_REQUEST['firstname']);
+$lastname = mysqli_real_escape_string($con,$_REQUEST['lastname']);
 $email = mysqli_real_escape_string($con,$_REQUEST['email']);
+$phoneNumber = mysqli_real_escape_string($con,$_REQUEST['phoneNumber']);
+$password = mysqli_real_escape_string($con,$_REQUEST['password']);
+$password2 = mysqli_real_escape_string($con,$_REQUEST['password2']);
 
 $password = md5($password);
 
-$insert = "INSERT INTO `users` (`id`, `username`, `password`, `email`) VALUES (NULL , '$username', '$password', '$email')";
+$insert = "INSERT INTO `users` (`id`, `fisrstname`, `lastname`, `email`, `phoneNumber`, `password`, `password2`,) 
+VALUES (NULL , '$firstname', '$lastname', '$email','$phoneNumber', '$password', '$password2')";
 
 if(mysqli_query($con, $insert)){
     echo "You have been successfully Sign In!";

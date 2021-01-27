@@ -6,7 +6,7 @@ body{
     background-image: url(img/bg.jpg);
     background-size: 100% 20%;
     background-attachment: fixed;
-
+    text-align: center;
 }
 
 h3{
@@ -17,9 +17,10 @@ h3{
 input, select {
     width: 20%;
     padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
+    margin: 20px;
+    border-radius: 8px;
 }
+
 
 
 

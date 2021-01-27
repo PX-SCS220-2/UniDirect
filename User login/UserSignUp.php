@@ -15,8 +15,8 @@
 
         <div class="input-group">
             <label class="textInput">User Name: </label>
-            <input type="text" name="firstname" placeholder="First Name">
-            <input type="text" name="lastname" placeholder="Last Name">
+            <input type="text" name="firstname" placeholder="First Name" required>
+            <input type="text" name="lastname" placeholder="Last Name" required>
         </div>
 
             <div class="input-group">
@@ -49,8 +49,7 @@
         <div class="input-group">
         <label class="name">Select Your Account Type </label>
         <select name="subject">
-            <option disabled="disabled" selected="selected">Account Type</option>
-            <option>Student</option>
+            <option disabled="disabled" selected="selected">Student</option>
             <option>University</option>
         </select>
         </div>
