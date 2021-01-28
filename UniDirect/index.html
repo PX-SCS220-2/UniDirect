@@ -1,3 +1,4 @@
+<?php require 'admin/inc/admin_connection.php'?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,141 +23,17 @@
 	<style type="text/css">
 	</style>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-
 </head>
 <body>
-	<nav class="navbar navbar-expand-md ">
-		<a class="navbar-brand" href="#">UniDirct<br><b>Universities</b><br>Guide</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-			<span class="navbar-toggler-icon fa fa-bars"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="collapsibleNavbar">
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link" href="#">HOME</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">ABOUT US</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">OFFERS</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">CONTACT US</a>
-				</li>
+
+    <!-- Navbar Area -->
+    <?php require 'inc/nav.php'?>
+
+    <!-- Banner Area -->
+    <?php require 'inc/banner-search.php'?>
 
 
-
-				
-
-				<li class="nav-item  border d-table w-900 login-nav">
-					<a class="nav-link" href="login.php">
-						<span class="fa fa-sign-out"></span> &nbsp Login </a>
-				
-				</li>
-
-			</ul>
-
-		</div>
-	</nav>
-
-	<div class="banner banner-top">
-		<div class="banner-title ">
-			<p class="title"><b>Courses in Australia</b></p>
-			<h2 class="sub-title hidden-sm-down">Search for accredited courses offered by Australian universities,courses and private colleges.</h2>
-		</div>
-
-
-		<div class="input-form">
-			<ul class="nav">
-				<li class="nav-item nav-item-search">
-					<a class="nav-link active" data-toggle="tab" href="#Universities">Universities</a>
-				</li>
-				<li class="nav-item nav-item-search">
-					<a class="nav-link" data-toggle="tab" href="#Course">Courses</a>
-				</li>
-				<li class="nav-item nav-item-search">
-					<a class="nav-link" data-toggle="tab" href="#Language">Language</a>
-				</li>
-			</ul>
-			<div class="tab-content">
-				<div class="tab-pane active" id="Universities">
-					<form action="" method="">
-						<div class="input-group">
-							<label for="Universities" class="form-top-labels form-top-labels-1">University</label>
-							<select id="University" name="Universities" class="form-control form-control-lg couse-inputs">
-								<option value="Uni">Australian National University </option>
-								<option value="Uni">Bond University</option>
-								<option value="Uni">Central Queensland University</option>
-								<option value="Uni">Charles Darwin University</option>
-								<option value="Uni">Charles Sturt University</option>
-								<option value="Uni">Curtin University</option>
-								<option value="Uni">Edith Cowan University</option>
-								<option value="Uni">University of South Australia</option>
-								<option value="Uni">University of Sydney</option>
-								<option value="Uni">University of Technology Sydney</option>
-								<option value="Uni">University of the Sunshine Coast</option>
-								<option value="Uni">Western Sydney University</option>
-								<option value="Uni">Victoria University</option>
-								<option value="Uni">University of Wollongong</option>
-								<option value="Uni">University of Western Australia</option>
-							</select>
-
-
-	<label for="Education" class="form-top-labels form-top-labels-2">Education</label>
-							<select id="Education" name="Education" class="form-control form-control-lg couse-inputs">
-								<option value="ICT1">Diploma</option>
-								<option value="Marketing1">Bachelor</option>
-								<option value="Accounting1">Master</option>
-								<option value="Accounting1">Phd</option>
-             </select>
-
-
-							<label for="course" class="form-top-labels form-top-labels-3">Course</label>
-							<select id="Course" name="course" class="form-control form-control-lg couse-inputs">
-								<option value="ICT">ICT</option>
-								<option value="Marketing">Marketing</option>
-								<option value="Accounting">Accounting</option>
-							</select>
-							<div class="input-group-append">
-								<button type="submit" class="btn search-btn">
-									<span class="fa fa-search"></span>
-								</button>
-							</div>
-						</div>
-
-					</form>
-
-				</div>
-				<div class="tab-pane" id="Course">
-					<form action="" method="">
-						<div class="input-group">
-							<input class="form-control form-control-lg search-input" type="text" placeholder="Find Course">
-							<div class="input-group-append">
-								<button type="submit" class="btn search-btn">
-									<span class="fa fa-search"></span>
-								</button>
-							</div>
-						</div>
-					</form>
-				</div>
-				<div class="tab-pane" id="Language">
-					<form action="" method="">
-						<div class="input-group">
-							<input class="form-control  form-control-lg search-input" type="text" placeholder="Find College..">
-							<div class="input-group-append">
-								<button type="submit" class="btn search-btn">
-									<span class="fa fa-search"></span>
-								</button>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="adverticement">
+    <div class="adverticement">
 
 
 	</div>
@@ -297,9 +174,7 @@
 
 
 
-<script type="text/javascript">$(function () {
-
-	// Change navigation bar when scroll
+<script type="text/javascript">$(function () { // Change navigation bar when scroll
 		$(window).scroll(function () {
 			var scroll = $(window).scrollTop();
 			if (scroll >= 30) {
@@ -424,12 +299,12 @@
 </script>
 
 <script type="text/javascript"> 
-	let resize = $(window).resize(function () { // when big screen size, slider should not
-		var w = $(window).width();
-		if (w < 768) {
-			$("#slider").bind("mousewheel", function () {
-				return false;
-			});
-		};
-
+	$( window ).resize(function() { // when big screen size, slider should not 
+		var w = $(window).width(); 
+		if(w<768){ 
+            $("#slider").bind("mousewheel", function() {
+                return false;
+            });
+		}
+	};
 </script>
