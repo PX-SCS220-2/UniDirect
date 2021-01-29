@@ -11,7 +11,7 @@
     <h1>
         Sign Up
     </h1>
-    <form action="UserSignUpProcess.php" method="post">
+    <form action="UserSignUp.php" method="post">
 
         <div class="input-group">
             <label class="textInput">User Name: </label>
@@ -30,12 +30,6 @@
         </div>
 
 
-        <div class="input-group">
-            <label class="textInput">Address: </label>
-            <input type="text" name="address" />
-        </div>
-
-
          <div class="input-group">
              <label class="textInput">Password: </label>
             <input type="password" name="password"  required/>
@@ -46,14 +40,6 @@
             <input type="password"  name="password2"  required/>
         </div>
 
-        <div class="input-group">
-        <label class="name">Select Your Account Type </label>
-        <select name="subject">
-            <option disabled="disabled" selected="selected">Student</option>
-            <option>University</option>
-        </select>
-        </div>
-
         <div>
             <input type="submit" name="register" value="Sign Up" />
         </div>
@@ -61,6 +47,15 @@
             <p class="text-center">Already a Member? <a href="login.php">Sign In</a> </p>
 
             </form>
+
+    <?php
+    if(isset($_GET["newpwd"])){
+        if($_GET["newpwd"] == "passwordupdated"){
+            echo '<p class="signupsuccess">Your password hs been reset!</p>';
+        }
+    }
+    ?>
+
                 <footer>
                     <p>Copyright UniDirect 2021</p>
                 </footer>
